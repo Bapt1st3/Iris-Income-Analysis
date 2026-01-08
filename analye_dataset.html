@@ -8368,7 +8368,7 @@ $$</p>
 <p>de sorte que $(y_1,\ldots,y_n)$ est un échantillon i.i.d. issu de
 $\mathcal{N}(m,\sigma^2)$.</p>
 <hr/>
-<h3 id="Fonction-de-vraisemblance">Fonction de vraisemblance<a class="anchor-link" href="#Fonction-de-vraisemblance">¶</a></h3><p>La densité d’une variable normale $\mathcal{N}(m,\sigma^2)$ est donnée par :</p>
+<p>La densité d’une variable normale $\mathcal{N}(m,\sigma^2)$ est donnée par :</p>
 <p>$$
 f(y)
 =
@@ -8388,8 +8388,7 @@ L(m,\sigma^2)
 -\frac{(y_i-m)^2}{2\sigma^2}
 \right)
 $$</p>
-<hr/>
-<h3 id="Log-vraisemblance">Log-vraisemblance<a class="anchor-link" href="#Log-vraisemblance">¶</a></h3><p>On va chercher les maximums de vraissemblance pour se faire on considère la log-vraisemblance :</p>
+<p>On va chercher les maximums de vraissemblance pour se faire on considère la log-vraisemblance :</p>
 <p>$$
 \ell(m,\sigma^2)
 =
@@ -8625,7 +8624,7 @@ $$</p>
 \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i \quad \text{et} \quad s^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2
 $$</p>
 <hr/>
-<h3 id="Syst%C3%A8me-d'%C3%A9quations-des-moments">Système d'équations des moments<a class="anchor-link" href="#Syst%C3%A8me-d'%C3%A9quations-des-moments">¶</a></h3><p>L'estimation des paramètres consiste à résoudre le système d'équations suivant:</p>
+<p>L'estimation des paramètres consiste à résoudre le système d'équations suivant:</p>
 <p>$$
 \begin{cases} 
 e^{m + \frac{\sigma^2}{2}} = \bar{x} &amp; (1) \\
@@ -8633,7 +8632,7 @@ e^{m + \frac{\sigma^2}{2}} = \bar{x} &amp; (1) \\
 \end{cases}
 $$</p>
 <hr/>
-<h3 id="Calcul-de-l'estimateur-de-$%5Csigma%5E2$">Calcul de l'estimateur de $\sigma^2$<a class="anchor-link" href="#Calcul-de-l'estimateur-de-$%5Csigma%5E2$">¶</a></h3><p>On remarque que le terme $e^{2m + \sigma^2}$ dans l'équation (2) peut s'écrire comme le carré de l'expression de l'espérance issue de l'équation (1) :</p>
+<h4 id="Calcul-de-l'estimateur-de-$%5Csigma%5E2$">Calcul de l'estimateur de $\sigma^2$<a class="anchor-link" href="#Calcul-de-l'estimateur-de-$%5Csigma%5E2$">¶</a></h4><p>On remarque que le terme $e^{2m + \sigma^2}$ dans l'équation (2) peut s'écrire comme le carré de l'expression de l'espérance issue de l'équation (1) :</p>
 <p>$$
 (e^{m + \frac{\sigma^2}{2}})^2 = e^{2m + \sigma^2} = \bar{x}^2
 $$</p>
@@ -8649,7 +8648,7 @@ $$</p>
 \hat{\sigma}^2_{MM} = \log\left(1 + \frac{s^2}{\bar{x}^2}\right)
 $$</p>
 <hr/>
-<h3 id="Calcul-de-l'estimateur-de-$m$">Calcul de l'estimateur de $m$<a class="anchor-link" href="#Calcul-de-l'estimateur-de-$m$">¶</a></h3><p>D'après (1) :</p>
+<h4 id="Calcul-de-l'estimateur-de-$m$">Calcul de l'estimateur de $m$<a class="anchor-link" href="#Calcul-de-l'estimateur-de-$m$">¶</a></h4><p>D'après (1) :</p>
 <p>$$
 m + \frac{\sigma^2}{2} = \log(\bar{x})
 $$</p>
@@ -8725,7 +8724,8 @@ Estimateur des moments de  la variance: 0.10432240066731328
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="V%C3%A9rifions-les-propri%C3%A9t%C3%A9s-des-estimateurs">Vérifions les propriétés des estimateurs<a class="anchor-link" href="#V%C3%A9rifions-les-propri%C3%A9t%C3%A9s-des-estimateurs">¶</a></h4><p>Nous allons vérifier les propriétés des estimateurs du Maximum de Vraisemblance ($\hat{m}_{EMV}, \hat{\sigma}^2_{EMV}$) et de la Méthode des Moments ($\hat{m}_{MM}, \hat{\sigma}^2_{MM}$).</p>
 <hr/>
-<h3 id="1.-V%C3%A9rifions-les-biais-des-estimateurs">1. Vérifions les biais des estimateurs<a class="anchor-link" href="#1.-V%C3%A9rifions-les-biais-des-estimateurs">¶</a></h3><p>Un estimateur $\hat{\theta}$ est dit sans biais si $E[\hat{\theta}] = \theta$.</p>
+<p>Nous allons vérifier si les estimateurs sont biasés.</p>
+<p>Un estimateur $\hat{\theta}$ est dit sans biais si $E[\hat{\theta}] = \theta$.</p>
 <ul>
 <li><p><strong>Pour l'EMV :</strong></p>
 <ul>
@@ -8759,13 +8759,13 @@ $$\lim_{n \to \infty} E[\hat{m}_{MM}] = m \qquad \text{et} \qquad \lim_{n \to \i
 </li>
 </ul>
 <hr/>
-<h3 id="2.-Loi-Forte-des-Grands-Nombres">2. Loi Forte des Grands Nombres<a class="anchor-link" href="#2.-Loi-Forte-des-Grands-Nombres">¶</a></h3><p>La <strong>Loi Forte des Grands Nombres</strong> garantit que la moyenne empirique converge presque sûrement vers l'espérance théorique lorsque $n \to \infty$, à condition que la variable $X$ admette un moment d'ordre 1 fini ($E[|X|] &lt; \infty$).</p>
+<h4 id="Loi-Forte-des-Grands-Nombres">Loi Forte des Grands Nombres<a class="anchor-link" href="#Loi-Forte-des-Grands-Nombres">¶</a></h4><p>La <strong>Loi Forte des Grands Nombres</strong> garantit que la moyenne empirique converge presque sûrement vers l'espérance théorique lorsque $n \to \infty$, à condition que la variable $X$ admette un moment d'ordre 1 fini ($E[|X|] &lt; \infty$).</p>
 <p>C'est bien le cas pour notre étude  nous vérifierons par la suite son application. On a donc nos estimateurs qui convergent vers les paramètres :</p>
 <p>$$
 \hat{\theta}_n \xrightarrow{p.s.} \theta
 $$</p>
 <hr/>
-<h3 id="3.-Th%C3%A9or%C3%A8me-de-la-Limite-Centrale">3. Théorème de la Limite Centrale<a class="anchor-link" href="#3.-Th%C3%A9or%C3%A8me-de-la-Limite-Centrale">¶</a></h3><p>Le <strong>Théorème de la Limite Centrale</strong> indique que pour un échantillon de grande taille ($n \to \infty$), si $X$ admet un moment d'ordre 2 fini on a alors:</p>
+<h4 id="Th%C3%A9or%C3%A8me-de-la-Limite-Centrale">Théorème de la Limite Centrale<a class="anchor-link" href="#Th%C3%A9or%C3%A8me-de-la-Limite-Centrale">¶</a></h4><p>Le <strong>Théorème de la Limite Centrale</strong> indique que pour un échantillon de grande taille ($n \to \infty$), si $X$ admet un moment d'ordre 2 fini on a alors:</p>
 <p>$$
 \sqrt{n}(\hat{\theta}_n - \theta) \xrightarrow{\mathcal{L}} \mathcal{N}(0, \sigma^2)
 $$
@@ -8959,7 +8959,7 @@ sigma2_ref : 0.097093 | E[sigma2_EMV] : 0.096408 | E[sigma2_MM] : 0.097667
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="4.-Efficacit%C3%A9-et-Information-de-Fisher">4. Efficacité et Information de Fisher<a class="anchor-link" href="#4.-Efficacit%C3%A9-et-Information-de-Fisher">¶</a></h3><p>Un estimateur est considéré comme <strong>optimal</strong> s'il atteint la <strong>Borne de Cramér-Rao (BCR)</strong>. La borne est donnée par l'inverse de l'Information de Fisher pour un échantillon de taille $n$ :
+<h3 id="Efficacit%C3%A9-et-Information-de-Fisher">Efficacité et Information de Fisher<a class="anchor-link" href="#Efficacit%C3%A9-et-Information-de-Fisher">¶</a></h3><p>Un estimateur est considéré comme <strong>optimal</strong> s'il atteint la <strong>Borne de Cramér-Rao (BCR)</strong>. La borne est donnée par l'inverse de l'Information de Fisher pour un échantillon de taille $n$ :
 $$Var(\hat{\theta}) \geq \text{BCR}(\theta) = \frac{1}{n \cdot I(\theta)}$$</p>
 <p>Pour la loi log-normale, la matrice d'Information de Fisher est :
 $$I(m, \sigma^2) = \begin{pmatrix} \frac{1}{\sigma^2} &amp; 0 \\ 0 &amp; \frac{1}{2\sigma^4} \end{pmatrix}$$</p>
@@ -8976,7 +8976,7 @@ Asymptotiquement ($n \to \infty$), on atteint la borne $\frac{2\sigma^4}{n} = \t
 <hr/>
 <p>Les estimateurs MM sont des fonctions non-linéaires des moments empiriques de $X$.</p>
 <p><strong>A. Variance de $\hat{m}_{MM}$ :</strong>
-Par la méthode Delta, on montre que :
+on admettras que :
 $$Var(\hat{m}_{MM}) \approx \frac{\sigma^2}{n} + \frac{\sigma^4}{2n}$$
 On observe que $Var(\hat{m}_{MM}) &gt; \text{BCR}(m)$.</p>
 <p>Il n'est pas nécessaire de calculer la variance pour $\hat{\sigma}^2_{MM}$</p>
