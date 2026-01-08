@@ -7517,7 +7517,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Estimation-de-la-loie-li%C3%A9e-au-revenu-moyen-des-m%C3%A9nages-d'une-iris">Estimation de la loie liée au revenu moyen des ménages d'une iris<a class="anchor-link" href="#Estimation-de-la-loie-li%C3%A9e-au-revenu-moyen-des-m%C3%A9nages-d'une-iris">¶</a></h2><p>Le jeu de données provient de l’<strong>INSEE</strong> et décrit les <strong>ressources économiques des ménages au niveau des IRIS</strong> (Îlots Regroupés pour l'Information Statistique). Il s'agit d'unités statistiques infra-communales. Le jeu de données est composé de <strong>13 674 entrées</strong>.</p>
+<h2 id="Estimation-de-la-loie-li%C3%A9e-au-revenu-moyen-des-m%C3%A9nages-d'une-iris">Estimation de la loie liée au revenu moyen des ménages d'une iris<a class="anchor-link" href="#Estimation-de-la-loie-li%C3%A9e-au-revenu-moyen-des-m%C3%A9nages-d'une-iris">¶</a></h2><p>Le jeu de données provient de l’<strong>INSEE</strong> et décrit les <strong>ressources économiques des ménages au niveau de zone IRIS</strong> (Îlots Regroupés pour l'Information Statistique). Il s'agit d'unités statistiques infra-communales. Le jeu de données est composé de <strong>13 674 entrées</strong>.</p>
 <p>lien du dataset: <a href="https://www.insee.fr/fr/statistiques/8229323">https://www.insee.fr/fr/statistiques/8229323</a></p>
 <p>On s’intéresse à la variable <code>DEC_MED21</code>, qui correspond au <strong>revenu médian annuel</strong> des ménages au sein d'un IRIS.</p>
 <p>On notera :
@@ -8346,7 +8346,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Estimation-des-param%C3%A8tres-d%E2%80%99une-loi-log-normale">Estimation des paramètres d’une loi log-normale<a class="anchor-link" href="#Estimation-des-param%C3%A8tres-d%E2%80%99une-loi-log-normale">¶</a></h2><h3 id="Estimation-par-le-maximum-de-vraisemblance">Estimation par le maximum de vraisemblance<a class="anchor-link" href="#Estimation-par-le-maximum-de-vraisemblance">¶</a></h3><p>Notre supposition que la variable aléatoire $X$ suit une loi log-normale est donc justifié par le QQ-plot et sa densité.</p>
+<h2 id="Estimation-des-param%C3%A8tres-d%E2%80%99une-loi-log-normale"><strong>Estimation des paramètres d’une loi log-normale</strong><a class="anchor-link" href="#Estimation-des-param%C3%A8tres-d%E2%80%99une-loi-log-normale">¶</a></h2><h3 id="Estimation-par-le-maximum-de-vraisemblance"><strong>Estimation par le maximum de vraisemblance</strong><a class="anchor-link" href="#Estimation-par-le-maximum-de-vraisemblance">¶</a></h3><p>Notre supposition que la variable aléatoire $X$ suit une loi log-normale est donc justifié par le QQ-plot et sa densité.</p>
 <p>On a donc :
 $$
 E[X] = e^{m + \frac{\sigma^2}{2}} \qquad \text{et} \qquad V[X] = (e^{\sigma^2} - 1)e^{2m + \sigma^2}
@@ -8615,7 +8615,7 @@ Estimateur max de vraissemblance de la variance : 0.09862218315695598
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Estimations-par-la-m%C3%A9thode-des-moments">Estimations par la méthode des moments<a class="anchor-link" href="#Estimations-par-la-m%C3%A9thode-des-moments">¶</a></h4><p>On a $X \sim \text{Log-Normal}(m, \sigma^2)$, comme dit avant:</p>
+<h3 id="Estimations-par-la-m%C3%A9thode-des-moments"><strong>Estimations par la méthode des moments</strong><a class="anchor-link" href="#Estimations-par-la-m%C3%A9thode-des-moments">¶</a></h3><p>On a $X \sim \text{Log-Normal}(m, \sigma^2)$, comme dit avant:</p>
 <p>$$
 E[X] = e^{m + \frac{\sigma^2}{2}} \qquad \text{et} \qquad V[X] = (e^{\sigma^2} - 1)e^{2m + \sigma^2}
 $$</p>
@@ -8722,7 +8722,7 @@ Estimateur des moments de  la variance: 0.10432240066731328
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="V%C3%A9rifions-les-propri%C3%A9t%C3%A9s-des-estimateurs">Vérifions les propriétés des estimateurs<a class="anchor-link" href="#V%C3%A9rifions-les-propri%C3%A9t%C3%A9s-des-estimateurs">¶</a></h4><p>Nous allons vérifier les propriétés des estimateurs du Maximum de Vraisemblance ($\hat{m}_{EMV}, \hat{\sigma}^2_{EMV}$) et de la Méthode des Moments ($\hat{m}_{MM}, \hat{\sigma}^2_{MM}$).</p>
+<h3 id="V%C3%A9rifions-les-propri%C3%A9t%C3%A9s-des-estimateurs"><strong>Vérifions les propriétés des estimateurs</strong><a class="anchor-link" href="#V%C3%A9rifions-les-propri%C3%A9t%C3%A9s-des-estimateurs">¶</a></h3><p>Nous allons vérifier les propriétés des estimateurs du Maximum de Vraisemblance ($\hat{m}_{EMV}, \hat{\sigma}^2_{EMV}$) et de la Méthode des Moments ($\hat{m}_{MM}, \hat{\sigma}^2_{MM}$).</p>
 <hr/>
 <p>Nous allons vérifier si les estimateurs sont biasés.</p>
 <p>Un estimateur $\hat{\theta}$ est dit sans biais si $E[\hat{\theta}] = \theta$.</p>
@@ -8948,7 +8948,7 @@ sigma2_ref : 0.097093 | E[sigma2_EMV] : 0.096408 | E[sigma2_MM] : 0.097667
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Interpr%C3%A9tation">Interprétation<a class="anchor-link" href="#Interpr%C3%A9tation">¶</a></h4><p>L'EMV est plus performant que la méthode des moments car il est sans biais (pour m), et a variance minimale, et converge plus vite vers la réalité. Les tests confirment que nos estimateurs sont consistants et suivent une loi normale.</p>
+<h4 id="Interpr%C3%A9tation-des-graphiques">Interprétation des graphiques<a class="anchor-link" href="#Interpr%C3%A9tation-des-graphiques">¶</a></h4><p>L'EMV est plus performant que la méthode des moments car il est sans biais (pour m), et a variance minimale, et converge plus vite vers la réalité. Les tests confirment que nos estimateurs sont consistants et suivent une loi normale.</p>
 </div>
 </div>
 </div>
@@ -8959,7 +8959,7 @@ sigma2_ref : 0.097093 | E[sigma2_EMV] : 0.096408 | E[sigma2_MM] : 0.097667
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Efficacit%C3%A9-et-Information-de-Fisher">Efficacité et Information de Fisher<a class="anchor-link" href="#Efficacit%C3%A9-et-Information-de-Fisher">¶</a></h3><p>Un estimateur est considéré comme <strong>optimal</strong> s'il atteint la <strong>Borne de Cramér-Rao (BCR)</strong>. La borne est donnée par l'inverse de l'Information de Fisher pour un échantillon de taille $n$ :
+<h3 id="Efficacit%C3%A9-et-Information-de-Fisher"><strong>Efficacité et Information de Fisher</strong><a class="anchor-link" href="#Efficacit%C3%A9-et-Information-de-Fisher">¶</a></h3><p>Un estimateur est considéré comme <strong>optimal</strong> s'il atteint la <strong>Borne de Cramér-Rao (BCR)</strong>. La borne est donnée par l'inverse de l'Information de Fisher pour un échantillon de taille $n$ :
 $$Var(\hat{\theta}) \geq \text{BCR}(\theta) = \frac{1}{n \cdot I(\theta)}$$</p>
 <p>Pour la loi log-normale, la matrice d'Information de Fisher est :
 $$I(m, \sigma^2) = \begin{pmatrix} \frac{1}{\sigma^2} &amp; 0 \\ 0 &amp; \frac{1}{2\sigma^4} \end{pmatrix}$$</p>
@@ -9062,13 +9062,34 @@ On observe que $Var(\hat{m}_{MM}) &gt; \text{BCR}(m)$.</p>
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=65fa6705">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Conclusion-du-Projet"><strong>Conclusion du Projet</strong><a class="anchor-link" href="#Conclusion-du-Projet">¶</a></h2><p>Cette étude visait à modéliser la distribution du revenu médian annuel des ménages au niveau des IRIS (variable DEC_MED21) en utilisant les données de l'INSEE. Nous avons dans un premier valider l'hypothèse que cette variable suit une <strong>loi log-normale</strong>.</p>
+<p>Par la suite nous avons utilisés deux méthodespour estimer les paramètres m et σ2 :</p>
+<ul>
+<li><p><strong>L’Estimateur du Maximum de Vraisemblance (EMV)</strong> : Les tests ont démontré que cet estimateur est le plus performant. Bien que l'estimateur de la variance soit biaisé pour de petits échantillons, il est asymptotiquement sans biais et, surtout, il s'avère efficace en atteignant la borne de Cramér-Rao.</p>
+</li>
+<li><p><strong>La Méthode des Moments (MM)</strong> : Bien que fournissant des résultats numériques proches pour de grands échantillons , ces estimateurs sont  biaisés en raison de la non-linéarité des fonctions logarithmiques . Ils n'atteignent pas la borne de Cramér-Rao, ils sont donc moins optimales que l'EMV.</p>
+</li>
+</ul>
+<p>En conclusion, <strong>l'EMV est la méthode d'estimation à privilégier</strong> pour ce jeu de données car elle offre une convergence plus rapide vers la réalité et une variance minimale.</p>
+<p>Ouverture et perspectives</p>
+<p>Pour approfondir cette analyse,on pourrait étudier cette même variable d'intérêt en utilisant une <strong>loi de Pareto</strong>. Cette loi est souvent utilisée pour modéliser les distributions de  revenus. Comparer les résultats obtenus entre le modèle log-normal et le modèle de Pareto permettrait de déterminer lequel décrit le mieux cette variable.</p>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1fd41b8d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Annexe">Annexe<a class="anchor-link" href="#Annexe">¶</a></h2>
+<h2 id="Annexe"><strong>Annexe</strong><a class="anchor-link" href="#Annexe">¶</a></h2>
 </div>
 </div>
 </div>
